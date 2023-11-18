@@ -73,17 +73,17 @@
             const depositAdd = document.getElementById("depositAmount").value;
             const depositNumber = parseFloat(depositAdd);
 
-            // const currentDeposit = document.getElementById("currentDeposit").innerText;
-            // const currentDepositNumber = parseFloat(currentDeposit);
-            // const totalDeposit = depositNumber + currentDepositNumber;
-            // document.getElementById("currentDeposit").innerText=totalDeposit;
+            const currentDeposit = document.getElementById("currentDeposit").innerText;
+            const currentDepositNumber = parseFloat(currentDeposit);
+            const totalDeposit = depositNumber + currentDepositNumber;
+            document.getElementById("currentDeposit").innerText=totalDeposit;
 
-            // const balance = document.getElementById("currentBalance").innerText;
-            // const rightBalance = parseFloat(balance);
-            // const totalBalance = totalDeposit +rightBalance;
-            // document.getElementById('currentBalance').innerText =totalBalance;
-            updateSpanText("currenDeposit", totalDeposit)
-            updateSpanText("currentBalance", totalDeposit)
+            const balance = document.getElementById("currentBalance").innerText;
+            const rightBalance = parseFloat(balance);
+            const totalBalance = totalDeposit +rightBalance;
+            document.getElementById('currentBalance').innerText =totalBalance;
+            // updateSpanText("currenDeposit", totalDeposit)
+            // updateSpanText("currentBalance", totalDeposit)
             document.getElementById("depositAmount").value ="";
         })
 
@@ -104,12 +104,12 @@
 
             document.getElementById("currentBalance").innerText = rightTotalBalance;
         })
-        function updateSpanText(id, totalDeposit){
-            const current = document.getElementById(id).innerText;
-            const currentNumber = parseFloat(current);
-            const total = totalDeposit +currentNumber;
-            document.getElementById(id).innerText =total;
-        }
+        // function updateSpanText(id, totalDeposit){
+        //     const current = document.getElementById(id).innerText;
+        //     const currentNumber = parseFloat(current);
+        //     const total = totalDeposit +currentNumber;
+        //     document.getElementById(id).innerText =total;
+        // }
     </script>
 </body>
 </html>
